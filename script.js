@@ -52,17 +52,17 @@ if (contactForm) {
 
       if (response.ok) {
         statusBox.textContent =
-          "Thanks for reaching out — your message has been sent. We'll get back to you soon.";
+          "Thanks for reaching out — your message has been sent. I'll get back to you soon.";
         statusBox.className = "form-status success";
         contactForm.reset();
       } else {
         statusBox.textContent =
-          "Something went wrong sending your message. Please try again, or email us directly below.";
+          "Something went wrong sending your message. Please try again, or email me directly.";
         statusBox.className = "form-status error";
       }
     } catch (err) {
       statusBox.textContent =
-        "Something went wrong sending your message. Please try again, or email us directly below.";
+        "Something went wrong sending your message. Please try again, or email me directly.";
       statusBox.className = "form-status error";
     } finally {
       submitBtn.disabled = false;
