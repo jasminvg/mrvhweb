@@ -44,15 +44,12 @@
 
       <div>
         <h2 style="margin-bottom:0.2em;">Send an Inquiry</h2>
-        <p style="color:var(--ink-soft); margin-bottom:24px;">Fill this out and we'll get back to you to schedule a consultation.</p>
+        <p style="color:var(--ink-soft); margin-bottom:24px;">Fill this out and I'll get back to you to schedule a consultation.</p>
 
-        <!--
-          FORMSPREE SETUP:
-          1. Create a free account at https://formspree.io using michael@velezcpaservices.com
-          2. Create a new form and copy its endpoint (looks like https://formspree.io/f/xxxxxxxx)
-          3. Replace YOUR_FORM_ID below with that ID.
-        -->
-        <form id="inquiry-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="inquiry-form" class="contact-form" action="https://formspree.io/f/mnpjlbjz" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from velezcpaservices.com" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
           <div class="form-row">
             <div class="field">
               <label for="name">Full Name</label>
@@ -72,22 +69,39 @@
             <div class="field">
               <label for="service">Service of Interest</label>
               <select id="service" name="service">
-                <option value="Tax Preparation">Tax Preparation</option>
+                <option value="Tax Preparation &amp; IRS Support">Tax Preparation &amp; IRS Support</option>
                 <option value="Tax Planning">Tax Planning</option>
                 <option value="Bookkeeping Services">Bookkeeping Services</option>
-                <option value="Business Accounting Services">Business Accounting Services</option>
-                <option value="IRS & State Tax Support">IRS &amp; State Tax Support</option>
+                <option value="Business Accounting">Business Accounting</option>
                 <option value="Not Sure Yet">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="language">Preferred Language</label>
+              <select id="language" name="preferred_language">
+                <option value="English">English</option>
+                <option value="Spanish">Español</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contact-method">Best Way to Reach You</label>
+              <select id="contact-method" name="preferred_contact">
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
               </select>
             </div>
           </div>
 
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us a bit about what you need help with..." required></textarea>
+            <textarea id="message" name="message" placeholder="Tell me a bit about what you need help with..." required></textarea>
           </div>
 
-          <p class="form-note">We typically respond within 1–2 business days.</p>
+          <p class="form-note">Please don't include Social Security numbers or account numbers in this form. We'll arrange a secure way to share documents once we connect.</p>
+          <p class="form-note">I typically respond within 1–2 business days.</p>
 
           <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
 
@@ -112,6 +126,7 @@
               <span class="value">(555) 555-5555 [placeholder]</span>
             </div>
           </a>
+          <p style="margin:18px 0 0; font-size:0.92rem;">También hablamos español.</p>
         </div>
       </div>
 
