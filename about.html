@@ -49,4 +49,112 @@
 
 <main id="main">
 
-  <section
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">About Me</p>
+      <h1>Hi, I'm Michael Velez, CPA.</h1>
+    </div>
+  </section>
+
+  <section class="about-body container">
+    <div class="about-grid">
+      <div class="about-story">
+        <p>I started Velez CPA Services to give small business owners, real estate investors, and nonprofit organizations something they rarely get from an accountant: a real advisor who's thinking about their finances all year, not just at tax time.</p>
+        <p>My work goes beyond preparing returns and closing the books. I help business owners, investors, and nonprofit leaders understand their financials, strengthen their processes, and make smarter decisions throughout the year.</p>
+        <p>Along the way I learned that good planning saves money, and that clean, accurate books are the foundation for every good decision.</p>
+        <p>My goal is simple: to be the person who takes the stress of tax and accounting off your hands so you can focus on your business or your mission. And because I'm bilingual, I'm happy to do that in English or Spanish.</p>
+
+        <h2>Beyond the numbers</h2>
+        <p>Family comes first. I'm originally from Puerto Rico and now call Pennsylvania home with my wife and our fur babies. When I'm not on a golf course or a pickleball court, or glued to a baseball or basketball game, you'll find me planning our next trip.</p>
+        <p>Exploring new places and cultures has taught me that everyone has a different story and a different way of doing things, which is something I bring to every client relationship.</p>
+      </div>
+
+      <div class="about-photo-wrap">
+        <img src="headshot.jpg" alt="Michael Velez, CPA" />
+      </div>
+    </div>
+
+    <div class="about-values">
+      <div class="values-card">
+        <h2>What I believe</h2>
+        <ul>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>You should never be surprised.</strong> Whether it's a tax bill or a budget shortfall, we plan ahead.</span>
+          </li>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>Complicated doesn't have to mean confusing.</strong> I explain the "why" in plain language.</span>
+          </li>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>Your CPA should be reachable.</strong> You'll work directly with me.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="values-card">
+        <h2>Who I work with</h2>
+        <ul>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>Small business owners</strong> who want proactive tax planning and books they can trust.</span>
+          </li>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>Real estate investors</strong> who need smart tax strategy across properties and entities.</span>
+          </li>
+          <li>
+            <svg class="tick-mark" viewBox="0 0 24 24"><path d="M4 12.5 L9.5 18 L20 6"/></svg>
+            <span><strong>Nonprofits</strong> that need accurate financial reporting, strong internal controls, and tax compliance handled right.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <h2>Let's take the stress off your plate.</h2>
+      <p>Whether you need proactive tax planning, cleaner books, or a CPA who actually picks up the phone, I'd love to hear what you're working on. Book a consultation and leave with a clear next step, even if we never work together.</p>
+      <a href="contact.html" class="btn btn-on-dark">Book a Consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="logo-full.png" alt="Velez CPA Services" /></a>
+        <p style="max-width:32ch; margin-top:10px;">Tax and accounting services built on clarity, compliance, and confidence.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:michael@velezcpaservices.com">michael@velezcpaservices.com</a></li>
+          <li><a href="tel:+15555555555">(555) 555-5555 [placeholder]</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Velez CPA Services. All rights reserved.</span>
+      <span>velezcpaservices.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
