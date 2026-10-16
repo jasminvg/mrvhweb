@@ -52,7 +52,7 @@ if (contactForm) {
 
       if (response.ok) {
         statusBox.textContent =
-          "Thanks for reaching out! Consider that one thing off your plate. I'll be in touch soon.";.";
+          "Thanks for reaching out! Consider that one thing off your plate. I'll be in touch soon.";
         statusBox.className = "form-status success";
         contactForm.reset();
       } else {
