@@ -21,7 +21,10 @@
   .values-card .tick-mark { width: 18px; height: 18px; margin-top: 3px; }
   .values-card .tick-mark path { stroke-dashoffset: 0; }
   .about-story h2 { margin-top: 1.4em; }
-    @media (min-width: 861px) { .about-grid { grid-template-columns: 1fr 260px; } }
+      @media (min-width: 861px) { .about-grid { grid-template-columns: 1fr 340px; align-items: stretch; } }
+  .about-photo-wrap { position: relative; min-height: 320px; }
+  .about-photo-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: var(--radius); }
+  @media (max-width: 860px) { .about-photo-wrap { max-width: 320px; } }
 </style>
 </head>
 <body>
@@ -63,8 +66,8 @@
         <p>Exploring new places and cultures has taught me that everyone has a different story and a different way of doing things, which is something I bring to every client relationship.</p>
       </div>
 
-      <div>
-        <img src="headshot.jpg" alt="Michael Velez, CPA" style="width:100%; max-width:320px; aspect-ratio:1; object-fit:cover; object-position:center top; border-radius:var(--radius); display:block;" />
+            <div class="about-photo-wrap">
+        <img src="headshot.jpg" alt="Michael Velez, CPA" />
       </div>
     </div>
 
